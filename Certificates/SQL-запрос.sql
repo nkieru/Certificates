@@ -1,0 +1,1 @@
+SELECT DISTINCT Cert.numbers FROM Certificate Cert JOIN intern_skills_tools i_s_t ON Cert.intern = i_s_t.intern JOIN certificate_skills_tools c_s_t ON Cert.id = c_s_t.certificate WHERE c_s_t.skill_tool != i_s_t.skill_tool;
